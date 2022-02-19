@@ -7,7 +7,17 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="username"></Entry>
+            <Entry Placeholder="password"></Entry>
+            <Entry Placeholder="re-enter password"></Entry>
+            <Entry Placeholder="email"></Entry>
+            <Entry Placeholder="re-enter email"></Entry>
+            <Entry Placeholder="daniel is a monkey"></Entry>
+
+
             <Button Text="Log In" Clicked="NavigateButton_OnClicked"></Button>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
