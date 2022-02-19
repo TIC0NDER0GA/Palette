@@ -28,5 +28,9 @@ namespace Palette
         {
             await Navigation.PushAsync(new Sign_Up());
         }
+        private async void NavigateButton_Preference(object sender, EventArgs e)
+        {
+  
+        }
     }
 }

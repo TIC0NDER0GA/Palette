@@ -3,21 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Palette.Sign_Up">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <Grid VerticalOptions="FillAndExpand"
+          Margin="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Label Text="Grid"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"
+               Grid.Row="0"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
             <Entry Placeholder="username"></Entry>
             <Entry Placeholder="password"></Entry>
             <Entry Placeholder="re-enter password"></Entry>
             <Entry Placeholder="email"></Entry>
             <Entry Placeholder="re-enter email"></Entry>
             <Entry Placeholder="daniel is a monkey"></Entry>
-
-
             <Button Text="Log In" Clicked="NavigateButton_OnClicked"></Button>
             
             
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,15 @@ namespace Palette
         {
             InitializeComponent();
         }
+
+        private async void NavigateButton_Categories(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Sign_Up());
+        }
+
+        private async void NavigateButton_Main(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }
