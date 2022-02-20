@@ -18,6 +18,10 @@ namespace Palette
         int count = 0;
 
   
+        private async void APItry(object sender, EventArgs e)
+        {
+            Program.Main("Macaroni and Cheese");
+        }
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
