@@ -44,7 +44,7 @@
             <Entry Grid.Column="0" Grid.Row="4" Placeholder="Email"></Entry>
             <Entry Grid.Column="0" Grid.Row="5" Placeholder="Re-enter Email"></Entry>
 
-            <Label HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="6" Text="If you already an account, please log in"></Label>
+            <Label HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="6" Text="Already Have an Account? Log in."></Label>
             <Button Grid.Column="0" Grid.Row="7" Text="Log In" Clicked="NavigateButton_OnClicked"></Button>
 
 
