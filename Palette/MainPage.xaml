@@ -33,9 +33,10 @@
             <Label Text="WOP!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
         </Frame>
         
-
-        <Entry Placeholder="Search for Recipe" Grid.Row="3"></Entry>
+        
+        <Entry x:Name="recipeFoodName" Placeholder="Search for Recipe" Grid.Row="3"></Entry>
         <Button Text="Search !" Clicked="APItry" Grid.Row="5"></Button>
+        <Label x:Name="listRecipe" Text="Palette"></Label>
     </Grid>
 
 </ContentPage>

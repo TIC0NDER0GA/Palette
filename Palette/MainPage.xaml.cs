@@ -15,13 +15,15 @@ namespace Palette
             InitializeComponent();
         }
 
-        int count = 0;
-
   
         private async void APItry(object sender, EventArgs e)
         {
-            Program.Main("Macaroni and Cheese");
+            Program.Main(recipeFoodName.Text);
+            recipeFoodName.Text = "";
             Console.WriteLine(Program.Recipe());
+            listRecipe.Text = Program.Recipe();
+
+
         }
 
 
