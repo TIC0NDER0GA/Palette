@@ -19,6 +19,7 @@ namespace Palette
         private async void APItry(object sender, EventArgs e)
         {
             Program.Main("Macaroni and Cheese");
+            Console.WriteLine(Program.Recipe());
         }
 
 
