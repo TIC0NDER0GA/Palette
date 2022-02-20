@@ -9,35 +9,45 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                
+            
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="100*" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
 
 
 
-            <Label Text="Grid"
+            <Label Text="Sign Up"
                Grid.Column="0"
                Grid.ColumnSpan="3"
                Grid.Row="0"
                FontSize="50"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
-            <Entry Placeholder="username"></Entry>
-            <Entry Placeholder="password"></Entry>
-            <Entry Placeholder="re-enter password"></Entry>
-            <Entry Placeholder="email"></Entry>
-            <Entry Placeholder="re-enter email"></Entry>
-            <Entry Placeholder="daniel is a monkey"></Entry>
-            <Button Text="Log In" Clicked="NavigateButton_OnClicked"></Button>
-            
-            
+            <Entry Grid.Column="0" Grid.Row="1" Placeholder="Username"></Entry>
+            <Entry Grid.Column="0" Grid.Row="2" Placeholder="Password" IsPassword="True"></Entry>
+            <Entry Grid.Column="0" Grid.Row="3" Placeholder="Re-enter Password" IsPassword="True"></Entry>
+            <Entry Grid.Column="0" Grid.Row="4" Placeholder="Email"></Entry>
+            <Entry Grid.Column="0" Grid.Row="5" Placeholder="Re-enter Email"></Entry>
+
+            <Label HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="6" Text="If you already an account, please log in"></Label>
+            <Button Grid.Column="0" Grid.Row="7" Text="Log In" Clicked="NavigateButton_OnClicked"></Button>
+
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
