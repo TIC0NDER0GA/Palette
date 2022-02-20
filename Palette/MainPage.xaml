@@ -36,7 +36,7 @@
 
         <Entry Placeholder="Username" Grid.Row="3"></Entry>
         <Entry Placeholder="Password" IsPassword="True" Grid.Row="4"></Entry>
-        <Button Text="Submit" Clicked="NavigateButton_Preference" Grid.Row="5"></Button>
+        <Button Text="Submit" Clicked="APItry" Grid.Row="5"></Button>
         <Label HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="6" Text="Don't Have an Account? Sign Up!"></Label>
         <Button Text="Sign Up" Clicked="NavigateButton_OnClicked" Grid.Row="7"></Button>
     </Grid>

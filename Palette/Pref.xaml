@@ -2,18 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Palette.Pref">
+
     <ContentPage.Content>
         <Grid>
-            <Label Text="Pref"
-                Grid.Column="1"
-                Grid.Row="0"/>
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Preferences"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"
+               Grid.Row="0"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+
             <Button Text="Back" Clicked="NavigateButton_Back"
-                    Grid.Column="1"
-                Grid.Row="1"></Button>
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Grid.RowSpan="2"
+                    ></Button>
             <Button Text="Continue" Clicked="NavigateButton_Continue"
-                    Grid.Column="1"
-                Grid.Row="2"></Button>
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Grid.RowSpan="2"
+                    ></Button>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

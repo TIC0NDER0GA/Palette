@@ -24,7 +24,7 @@ namespace Palette
 
         private async void NavigateButton_Continue(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Categories());
+           
         }
     }
 }
