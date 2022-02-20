@@ -19,11 +19,9 @@ namespace Palette
         private async void APItry(object sender, EventArgs e)
         {
             Program.Main(recipeFoodName.Text);
-            recipeFoodName.Text = "";
+            recipeFoodName.Text = "K";
             Console.WriteLine(Program.Recipe());
             listRecipe.Text = Program.Recipe();
-
-
         }
 
 
