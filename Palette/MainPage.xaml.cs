@@ -15,23 +15,14 @@ namespace Palette
             InitializeComponent();
         }
 
-        int count = 0;
-
   
         private async void APItry(object sender, EventArgs e)
         {
             Program.Main("Macaroni and Cheese");
         }
 
-        private async void NavigateButton_OnClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Sign_Up());
-            
-        }
-        private async void NavigateButton_Preference(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Pref());
-        }
+
+     
 
 
 
