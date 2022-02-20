@@ -23,10 +23,7 @@ namespace Palette
             Program.Main("Macaroni and Cheese");
         }
 
-        private async void NavigateButton_Preference(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Pref());
-        }
+
 
 
 
