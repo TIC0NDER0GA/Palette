@@ -17,10 +17,7 @@ namespace Palette
 
         int count = 0;
 
-        async void Handle_Clicked(object sender, System.EventArgs e)
-        {
-           
-        }
+  
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
