@@ -3,16 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Palette.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="Orange" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Button Text="Click Me" Clicked="Handle_Clicked"/>
+    <Grid VerticalOptions="FillAndExpand"
+          Margin="10">
 
-        <Entry Placeholder="Username"></Entry>
-        <Entry Placeholder="Password" IsPassword="True"></Entry>
-        <Button Text="Submit" Clicked="NavigateButton_OnClicked"></Button>
-        <Button Text="Sign Up" Clicked="NavigateButton_OnClicked"></Button>
-    </StackLayout>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        
+        <Frame BackgroundColor="Orange" Padding="24" CornerRadius="0" Grid.Row="1">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+        
+
+        <Entry Placeholder="Username" Grid.Row="3"></Entry>
+        <Entry Placeholder="Password" IsPassword="True" Grid.Row="4"></Entry>
+        <Button Text="Submit" Clicked="NavigateButton_OnClicked" Grid.Row="5"></Button>
+        <Label HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="6" Text="Don't Have an Account? Sign Up!"></Label>
+        <Button Text="Sign Up" Clicked="NavigateButton_OnClicked" Grid.Row="7"></Button>
+    </Grid>
 
 </ContentPage>
