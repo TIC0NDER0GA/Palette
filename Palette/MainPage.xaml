@@ -30,13 +30,12 @@
         
         
         <Frame BackgroundColor="Orange" Padding="24" CornerRadius="0" Grid.Row="1">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            <Label Text="WOP!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
         </Frame>
         
 
-        <Entry Placeholder="Username" Grid.Row="3"></Entry>
-        <Entry Placeholder="Password" IsPassword="True" Grid.Row="4"></Entry>
-        <Button Text="Submit" Clicked="APItry" Grid.Row="5"></Button>
+        <Entry Placeholder="Search for Recipe" Grid.Row="3"></Entry>
+        <Button Text="Search !" Clicked="APItry" Grid.Row="5"></Button>
     </Grid>
 
 </ContentPage>

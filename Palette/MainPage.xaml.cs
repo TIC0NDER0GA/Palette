@@ -15,6 +15,8 @@ namespace Palette
             InitializeComponent();
         }
 
+        int count = 0;
+
   
         private async void APItry(object sender, EventArgs e)
         {
@@ -23,7 +25,6 @@ namespace Palette
         }
 
 
-     
 
 
 
