@@ -17,20 +17,22 @@ namespace Palette
 
         int count = 0;
 
-        void Handle_Clicked(object sender, System.EventArgs e)
+        async void Handle_Clicked(object sender, System.EventArgs e)
         {
-
-            count = count + 69;
-            ((Button)sender).Text = $"You aroused me {count} times";
+           
         }
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Sign_Up());
+            
         }
         private async void NavigateButton_Preference(object sender, EventArgs e)
         {
-  
+            await Navigation.PushAsync(new Pref());
         }
+
+
+
     }
 }

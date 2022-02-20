@@ -11,7 +11,7 @@
 
         <Entry Placeholder="Username"></Entry>
         <Entry Placeholder="Password" IsPassword="True"></Entry>
-        <Button Text="Submit" Command=""></Button>
+        <Button Text="Submit" Clicked="NavigateButton_Preference"></Button>
         <Button Text="Sign Up" Clicked="NavigateButton_OnClicked"></Button>
     </StackLayout>
 

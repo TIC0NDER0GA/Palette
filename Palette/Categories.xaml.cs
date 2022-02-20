@@ -10,19 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace Palette
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Preferences : ContentView
+    public partial class Categories : ContentPage
     {
-        public Preferences()
+        public Categories()
         {
             InitializeComponent();
         }
 
-        private async void NavigateButton_Categories(object sender, EventArgs e)
+
+        private async void NavigateButton_Back(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Sign_Up());
+            await Navigation.PushAsync(new Pref());
         }
 
-        private async void NavigateButton_Main(object sender, EventArgs e)
+        private async void NavigateButton_Browse(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
